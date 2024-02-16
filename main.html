@@ -1,0 +1,197 @@
+<!doctype html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="./style.css">
+    <title>Feliz aniversário Vida!</title>
+</head>
+<style>
+    .card {
+        border-radius: 15px;
+        text-align: center;
+        background-color: red;
+    }
+
+    .card a,
+    .card button {
+        background-color: #fff;
+        color: red;
+        border: none;
+    }
+
+    .card a:hover,
+    .card button:hover {
+        background-color: rgb(0, 0, 0);
+        color: red;
+    }
+
+    .heart {
+        font-size: 48px;
+        color: red;
+    }
+
+    .bold {
+        font-weight: bold;
+    }
+</style>
+
+<body>
+
+    <div class="audio">
+        <audio id="audioPlayer" controls autoplay>
+            <!-- Música 1 -->
+            <source src="./musicas/Y2meta.app - John Legend - All of me(Lyrics) (128 kbps).mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+
+            <!-- Música 2 -->
+            <source src="./musicas/Y2meta.app - Someone Like You - Adele (Lyrics) 🎵 (128 kbps).mp3" type="audio/mp3">
+            Your browser does not support the audio element.
+
+            <source src="./musicas/Y2meta.app - Gavin James - Always (Official Lyric Video) (128 kbps).mp3"
+                type="audio/mp3">
+            Your browser does not support the audio element.
+        </audio>
+        <button onclick="startPlayback()" id="iniciar" class="btn btn-danger">Iniciar Reprodução</button>
+    </div>
+
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Feliz aniversário meu Amor!</h1>
+        <p class="lead">Espero que você tenha um dia incrível!</p>
+        <p class="bold">Você é muito especial para mim!</p>
+        <p class="heart">&#10084;</p> <!-- Coração Emoji -->
+    </div>
+
+    <div class="container mt-5">
+        <div class="row justify-content-center">
+
+            <!-- Card 1 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Suas fotos</h5>
+                        <p class="card-text">Separadas com muito carinho.</p>
+                        <a href="galeria.html" class="btn">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 2 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">Mensagem que preparei para voçê</h5>
+                        <p class="card-text">Escrito com muito carinho para você.</p>
+                        <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#myModal">
+                            Ver texto
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Card 3 -->
+            <div class="col-md-4 mb-3">
+                <div class="card">
+                    <div class="card-body">
+                        <h5 class="card-title">2 Anos de namoro e um noivado</h5>
+                        <p class="card-text">Uma breve descrição</p>
+                        <a href="#" onclick="alert('você nao pode acessar ainda!')" class="btn">Acessar</a>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+    <div class="modal fade" id="myModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel">Menu Dropdown na Modal</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fechar"></button>
+                </div>
+                <div class="modal-body">
+                    <div class="container mt-3 text-center">
+                        <div class="accordion" id="accordionExample">
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                                        INICIO
+                                    </button>
+                                </h2>
+                                <div id="collapseOne" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-justify text-dark">
+                                        Meu amor , hoje , dia 15/02/24 quero te desejar meus parabéns a ti, te agradecer
+                                        por fazer parte da minha vida , na vida da minha família, te agradecer por tudo
+                                        que tem feito em minha vida, por ser minha amiga, companheira, namorada, noiva ,
+                                        a mulher dos meus dias , com quem quero me casar , me tornar uma só carne, ter
+                                        um relacionamento duradouro , próspero, abençoado por Deus, ter nossos
+                                        filhinhos, nossa casinha , nosso carro, se dedicar um ao outro , se entregar de
+                                        corpo e alma, um para outro,
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTwo" aria-expanded="true" aria-controls="collapseOne">
+                                        MEIO
+                                    </button>
+                                </h2>
+                                <div id="collapseTwo" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-justify text-dark">
+                                        A cada dia que passa eu tenho certeza de que você e a mulher com quem quero
+                                        viver até os
+                                        fins dos meus dias , na saúde e na doença, na alegria e na tristeza, na riqueza
+                                        e pobreza.
+                                        Em hipótese alguma quero brigar contigo e dormir longe de ti, se algum dia
+                                        discutirmos, que
+                                        possamos resolver no mesmo dia , quero te dizer que sou muito grato a Deus por
+                                        ter você na
+                                        minha vida , tudo que passamos, momentos bons e outros nem tanto , nós
+                                        proporcionaram
+                                        amadurecimento, e que continuamos assim , firmes e fortes, evoluindo,
+                                        amadurecendo e
+                                        crescendo espiritualmente, mentalmente juntinhos por toda uma vida
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion-item">
+                                <h2 class="accordion-header" id="headingOne">
+                                    <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                        data-bs-target="#collapseTree" aria-expanded="true" aria-controls="collapseOne">
+                                        MEIO
+                                    </button>
+                                </h2>
+                                <div id="collapseTree" class="accordion-collapse collapse show"
+                                    aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                                    <div class="accordion-body text-justify text-dark">
+                                        TE AMO
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- Adicione mais itens conforme necessário -->
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <p class="heart">Te Amo Mozão &#10084;</p> <!-- Coração Emoji -->
+                    <button type="button" class="btn btn-danger" data-bs-dismiss="modal">Fechar</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM"
+        crossorigin="anonymous"></script>
+    <script src="./script.js"></script>
+</body>
+
+</html>
